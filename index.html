@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario Covid-19 Gratis</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/ciencias.png">
+    <link rel="stylesheet"  type="text/css" href="css/estilos.css">
+
+  </head>
+
+
+
+  <div id="Encabezado">
+    <h3>Llene el formulario que se muestra a continuación para obtener una recomendación respecto al Covid-19, al terminar se mostrara una recomendación apta para su situación.</h3>
+  </div>
+
+
+
+  <body>
+    <div class="form">
+
+
+    <form action="insert.php"  method="POST">
+      <table>
+        <h4>Datos Personales</h4>
+
+
+          <div>
+            <p>Nombre completo:</p>
+            <input type="text" id="nombre" name="username"  placeholder="Nombre completo" required>
+          </div>
+
+          <div>
+             <p>Genero:</p>
+              <input type="radio" id="generoH" name="genero" value="H" required>
+              <label for="genero">Hombre</label>
+              <input type="radio" id="generoM" name="genero" value="M" required>
+              <label for="genero">Mujer</label>
+          </div>
+
+          <div>
+              <p>Edad:</p>
+              <input type="number" id="edad" name="edad"  placeholder="00" required> Años
+          </div>
+
+        <div>
+          <p>Correo Electrónico:</p>
+          <input type="email" id="email"  placeholder="Ejemplo@ejem.com" name="email" required>
+        </div>
+
+        <div>
+            <p>Estado:</p>
+            <select name="estado" id="estado" required>
+              <option selected hidden value="">Seleccionar</option>
+              <option value="Aguascalientes">  Aguascalientes </option>
+              <option value="Baja California">  Baja California </option>
+              <option value="Baja California Sur">  Baja California Sur </option>
+              <option value="Campeche">  Campeche </option>
+              <option value="Chiapas">  Chiapas </option>
+              <option value="Chihuahua">  Chihuahua </option>
+              <option value="Ciudad de Mexico">  Ciudad de México </option>
+              <option value="Coahuila de Zaragoza">  Coahuila de Zaragoza </option>
+              <option value="Colima">  Colima </option>
+              <option value="Durango">  Durango </option>
+              <option value="Estado de Mexico">  Estado de México </option>
+              <option value="Guanajuato">  Guanajuato </option>
+              <option value="Guerrero">  Guerrero </option>
+              <option value="Hidalgo">  Hidalgo </option>
+              <option value="Jalisco">  Jalisco </option>
+              <option value="Michoacan de Ocampo">  Michoacán de Ocampo </option>
+              <option value="Morelos">  Morelos </option>
+              <option value="Nayarit">  Nayarit </option>
+              <option value="Nuevo Leon">  Nuevo León </option>
+              <option value="Oaxaca">  Oaxaca </option>
+              <option value="Puebla">  Puebla </option>
+              <option value="Queretaro">  Querétaro </option>
+              <option value="Quintana Roo">  Quintana Roo </option>
+              <option value="San Luis Potosi">  San Luis Potosí </option>
+              <option value="Sin Localidad">  Sin Localidad </option>
+              <option value="Sinaloa">  Sinaloa </option>
+              <option value="Sonora">  Sonora </option>
+              <option value="Tabasco">  Tabasco </option>
+              <option value="Tamaulipas">  Tamaulipas </option>
+              <option value="Tlaxcala">  Tlaxcala </option>
+              <option value="Veracruz">  Veracruz </option>
+              <option value="Yucatan">  Yucatán </option>
+              <option value="Zacatecas">  Zacatecas </option>
+            </select>
+        </div>
+
+
+          <h4>¿Padece de las siguientes síntomas?</h4>
+
+
+          <div>
+             <p>Fiebre:</p>
+              <input type="radio" id="sin1s" name="sin1" value="S" required>Si
+              <input type="radio" id="sin1n" name="sin1" value="N" required>No
+          </div>
+
+          <div>
+             <p>Tos seca:</p>
+              <input type="radio" id="sin2s" name="sin2" value="S" required>Si
+              <input type="radio" id="sin2n" name="sin2" value="N" required>No
+          </div>
+
+          <div>
+             <p>Cansancio:</p>
+              <input type="radio" id="sin3s" name="sin3" value="S" required>Si
+              <input type="radio" id="sin3n" name="sin3" value="N" required>No
+          </div>
+
+          <div>
+             <p>Dolor corporal:</p>
+              <input type="radio" id="sin4s" name="sin4" value="S" required>Si
+              <input type="radio" id="sin4n" name="sin4" value="N" required>No
+          </div>
+
+          <div>
+             <p>Congestión  nasal:</p>
+              <input type="radio" id="sin5s" name="sin5" value="S" required>Si
+              <input type="radio" id="sin5n" name="sin5" value="N" required>No
+          </div>
+
+          <div>
+             <p>Dolor de cabeza:</p>
+              <input type="radio" id="sin6s" name="sin6" value="S" required>Si
+              <input type="radio" id="sin6n" name="sin6" value="N" required>No
+          </div>
+
+          <div>
+             <p>Conjuntivitis:</p>
+              <input type="radio" id="sin7s" name="sin7" value="S" required>Si
+              <input type="radio" id="sin7n" name="sin7" value="N" required>No
+          </div>
+
+          <div>
+             <p>Dolor de garganta:</p>
+              <input type="radio" id="sin8s" name="sin8" value="S" required>Si
+              <input type="radio" id="sin8n" name="sin8" value="N" required>No
+          </div>
+
+          <div>
+             <p>Diarrea:</p>
+              <input type="radio"  id="sin9s" name="sin9" value="S" required>Si
+              <input type="radio"  id="sin9n" name="sin9" value="N" required>No
+          </div>
+
+          <div>
+             <p>Perdida de gusto:</p>
+              <input type="radio"  id="sin10s" name="sin10" value="S" required>Si
+              <input type="radio"  id="sin10n" name="sin10" value="N" required>No
+          </div>
+
+          <div>
+             <p>Perdida de olfato:</p>
+              <input type="radio"  id="sin11s" name="sin11" value="S" required>Si
+              <input type="radio" id="sin11n"  name="sin11" value="N" required>No
+          </div>
+
+          <div>
+             <p>Cambio de color de los dedos de manos o pies:</p>
+              <input type="radio" id="sin12s" name="sin12" value="S" required>Si
+              <input type="radio" id="sin12n" name="sin12" value="N" required>No
+          </div>
+
+          <div>
+             <p>Dificultades para hablar:</p>
+              <input type="radio" id="sin18s"  name="sin18" value="S" required>Si
+              <input type="radio" id="sin18n"  name="sin18" value="N" required>No
+          </div>
+
+          <div>
+             <p>Dificultades para moverse  :</p>
+              <input type="radio" id="sin19s"  name="sin19" value="S" required>Si
+              <input type="radio" id="sin19n"  name="sin19" value="N" required>No
+          </div>
+
+          <h4>¿Padece de las siguientes enfermedades?</h4>
+
+          <div>
+             <p>Hipertensión arterial:</p>
+              <input type="radio" id="sin13s" name="sin13" value="S" required>Si
+              <input type="radio" id="sin13n" name="sin13" value="N" required>No
+          </div>
+
+          <div>
+             <p>Problemas Cardiacos:</p>
+              <input type="radio" id="sin14s" name="sin14" value="S" required>Si
+              <input type="radio" id="sin14n" name="sin14" value="N" required>No
+          </div>
+
+          <div>
+             <p>Problemas pulmonares:</p>
+              <input type="radio" id="sin15s" name="sin15" value="S" required>Si
+              <input type="radio" id="sin15n" name="sin15" value="N" required>No
+          </div>
+
+          <div>
+             <p>Diabetes:</p>
+              <input type="radio" id="sin16s" name="sin16" value="S" required>Si
+              <input type="radio" id="sin16n" name="sin16" value="N" required>No
+          </div>
+
+          <div>
+             <p>Cáncer:</p>
+              <input type="radio" id="sin17s" name="sin17" value="S" required>Si
+              <input type="radio" id="sin17n" name="sin17" value="N" required>No
+          </div>
+
+          <input type="submit" onclick="resultados()" value="Enviar">
+          <br><br>
+          <input type="reset" onclick="alert('Se borraron los datos')" value="Borrar Datos">
+
+
+
+      </table>
+
+    </form>
+</div>
+
+    <script>
+      function resultados() {
+
+        var nombre = document.getElementById("nombre").value;
+        localStorage.setItem("nombre_variable",nombre);
+
+        if(document.getElementById('generoH').checked){
+          var genero = document.getElementById("generoH").value;
+          localStorage.setItem("genero_variable",genero);
+        }else{
+          var genero = document.getElementById("generoM").value;
+          localStorage.setItem("genero_variable",genero);
+        }
+
+        var edad = document.getElementById("edad").value;
+        localStorage.setItem("edad_variable",edad);
+
+        var email = document.getElementById("email").value;
+        localStorage.setItem("email_variable",email);
+
+        var estado = document.getElementById("estado").value;
+        localStorage.setItem("estado_variable",estado);
+
+        if(document.getElementById('sin1s').checked){
+          var sin1 = document.getElementById("sin1s").value;
+          localStorage.setItem("sin1_variable",sin1);
+        }else{
+          var sin1 = document.getElementById("sin1n").value;
+          localStorage.setItem("sin1_variable",sin1);
+        }
+
+        if(document.getElementById('sin2s').checked){
+          var sin2 = document.getElementById("sin2s").value;
+          localStorage.setItem("sin2_variable",sin2);
+        }else{
+          var sin2 = document.getElementById("sin2n").value;
+          localStorage.setItem("sin2_variable",sin2);
+        }
+
+        if(document.getElementById('sin3s').checked){
+          var sin3 = document.getElementById("sin3s").value;
+          localStorage.setItem("sin3_variable",sin3);
+        }else{
+          var sin3 = document.getElementById("sin3n").value;
+          localStorage.setItem("sin3_variable",sin3);
+        }
+
+        if(document.getElementById('sin4s').checked){
+          var sin4 = document.getElementById("sin4s").value;
+          localStorage.setItem("sin4_variable",sin4);
+        }else{
+          var sin4 = document.getElementById("sin4n").value;
+          localStorage.setItem("sin4_variable",sin4);
+        }
+
+        if(document.getElementById('sin5s').checked){
+          var sin5 = document.getElementById("sin5s").value;
+          localStorage.setItem("sin5_variable",sin5);
+        }else{
+          var sin5 = document.getElementById("sin5n").value;
+          localStorage.setItem("sin5_variable",sin5);
+        }
+
+        if(document.getElementById('sin6s').checked){
+          var sin6 = document.getElementById("sin6s").value;
+          localStorage.setItem("sin6_variable",sin6);
+        }else{
+          var sin6 = document.getElementById("sin6n").value;
+          localStorage.setItem("sin6_variable",sin6);
+        }
+
+        if(document.getElementById('sin7s').checked){
+          var sin7 = document.getElementById("sin7s").value;
+          localStorage.setItem("sin7_variable",sin7);
+        }else{
+          var sin7 = document.getElementById("sin7n").value;
+          localStorage.setItem("sin7_variable",sin7);
+        }
+
+        if(document.getElementById('sin8s').checked){
+          var sin8 = document.getElementById("sin8s").value;
+          localStorage.setItem("sin8_variable",sin8);
+        }else{
+          var sin8 = document.getElementById("sin8n").value;
+          localStorage.setItem("sin8_variable",sin8);
+        }
+
+        if(document.getElementById('sin9s').checked){
+          var sin9 = document.getElementById("sin9s").value;
+          localStorage.setItem("sin9_variable",sin9);
+        }else{
+          var sin9 = document.getElementById("sin9n").value;
+          localStorage.setItem("sin9_variable",sin9);
+        }
+
+        if(document.getElementById('sin10s').checked){
+          var sin10 = document.getElementById("sin10s").value;
+          localStorage.setItem("sin10_variable",sin10);
+        }else{
+          var sin10 = document.getElementById("sin10n").value;
+          localStorage.setItem("sin10_variable",sin10);
+        }
+
+        if(document.getElementById('sin11s').checked){
+          var sin11 = document.getElementById("sin11s").value;
+          localStorage.setItem("sin11_variable",sin11);
+        }else{
+          var sin11 = document.getElementById("sin11n").value;
+          localStorage.setItem("sin11_variable",sin11);
+        }
+
+        if(document.getElementById('sin12s').checked){
+          var sin12 = document.getElementById("sin12s").value;
+          localStorage.setItem("sin12_variable",sin12);
+        }else{
+          var sin12 = document.getElementById("sin12n").value;
+          localStorage.setItem("sin12_variable",sin12);
+        }
+
+        if(document.getElementById('sin13s').checked){
+          var sin13 = document.getElementById("sin13s").value;
+          localStorage.setItem("sin13_variable",sin13);
+        }else{
+          var sin13 = document.getElementById("sin13n").value;
+          localStorage.setItem("sin13_variable",sin13);
+        }
+
+        if(document.getElementById('sin14s').checked){
+          var sin14 = document.getElementById("sin14s").value;
+          localStorage.setItem("sin14_variable",sin14);
+        }else{
+          var sin14 = document.getElementById("sin14n").value;
+          localStorage.setItem("sin14_variable",sin14);
+        }
+
+        if(document.getElementById('sin15s').checked){
+          var sin15 = document.getElementById("sin15s").value;
+          localStorage.setItem("sin15_variable",sin15);
+        }else{
+          var sin15 = document.getElementById("sin15n").value;
+          localStorage.setItem("sin15_variable",sin15);
+        }
+
+        if(document.getElementById('sin16s').checked){
+          var sin16 = document.getElementById("sin16s").value;
+          localStorage.setItem("sin16_variable",sin16);
+        }else{
+          var sin16 = document.getElementById("sin16n").value;
+          localStorage.setItem("sin16_variable",sin16);
+        }
+
+        if(document.getElementById('sin17s').checked){
+          var sin17 = document.getElementById("sin17s").value;
+          localStorage.setItem("sin17_variable",sin17);
+        }else{
+          var sin17 = document.getElementById("sin17n").value;
+          localStorage.setItem("sin17_variable",sin17);
+        }
+
+        if(document.getElementById('sin18s').checked){
+          var sin18 = document.getElementById("sin18s").value;
+          localStorage.setItem("sin18_variable",sin18);
+        }else{
+          var sin18 = document.getElementById("sin18n").value;
+          localStorage.setItem("sin18_variable",sin18);
+        }
+
+        if(document.getElementById('sin19s').checked){
+          var sin19 = document.getElementById("sin19s").value;
+          localStorage.setItem("sin19_variable",sin19);
+        }else{
+          var sin19 = document.getElementById("sin19n").value;
+          localStorage.setItem("sin19_variable",sin19);
+        }
+
+
+
+
+
+
+      }
+    </script>
+
+<div id="cont">
+  <div id="sfcx1wuaynw7mx3jjkl26f124lcth4zxrk2" ></div>
+  <script type="text/javascript" src="https://counter1.stat.ovh/private/counter.js?c=x1wuaynw7mx3jjkl26f124lcth4zxrk2&down=async" async></script>
+  <br><noscript><a href="https://www.contadorvisitasgratis.com" title="contadores de visitas"><img src="https://counter1.stat.ovh/private/contadorvisitasgratis.php?c=x1wuaynw7mx3jjkl26f124lcth4zxrk2" border="0" title="contadores de visitas" alt="contadores de visitas"></a></noscript>
+</div>
+
+</body>
+</html>

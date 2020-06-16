@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet"  type="text/css" href="css/estilos.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/ciencias.png">
+    <title>Resultados Formulario Covid-19</title>
+  </head>
+  <body>
+
+
+
+    <div class="resultados">
+      <h3>Resultados:</h3>
+        <script>
+
+
+          var nombre = localStorage.getItem("nombre_variable");
+          var genero = localStorage.getItem("genero_variable");
+          var edad = localStorage.getItem("edad_variable");
+          var email = localStorage.getItem("email_variable");
+          var estado = localStorage.getItem("estado_variable");
+          var sin1 = localStorage.getItem("sin1_variable");
+          var sin2 = localStorage.getItem("sin2_variable");
+          var sin3 = localStorage.getItem("sin3_variable");
+          var sin4 = localStorage.getItem("sin4_variable");
+          var sin5 = localStorage.getItem("sin5_variable");
+          var sin6 = localStorage.getItem("sin6_variable");
+          var sin7 = localStorage.getItem("sin7_variable");
+          var sin8 = localStorage.getItem("sin8_variable");
+          var sin9 = localStorage.getItem("sin9_variable");
+          var sin10 = localStorage.getItem("sin10_variable");
+          var sin11 = localStorage.getItem("sin11_variable");
+          var sin12 = localStorage.getItem("sin12_variable");
+          var sin13 = localStorage.getItem("sin13_variable");
+          var sin14 = localStorage.getItem("sin14_variable");
+          var sin15 = localStorage.getItem("sin15_variable");
+          var sin16 = localStorage.getItem("sin16_variable");
+          var sin17 = localStorage.getItem("sin17_variable");
+          var sin18 = localStorage.getItem("sin18_variable");
+          var sin19 = localStorage.getItem("sin19_variable");
+          var sint=0;
+          var sintM=0;
+          var sintM2=0;
+          var sintM3=0;
+
+
+        if(sin1=="S"&&sin2=="S"&&sin3=="S"){
+            var sintM=sintM+3;
+        }
+
+        if(sin1=="S"){
+          var sint=sint+1;
+          var sintM3=sintM3+1;
+        }
+
+        if(sin2=="S"){
+          var sint=sint+1;
+          var sintM3=sintM3+1;
+        }
+
+        if(sin3=="S"){
+          var sint=sint+1;
+          var sintM3=sintM3+1;
+        }
+
+        if(sin4=="S"){
+          var sint=sint+1;
+        }
+        if(sin5=="S"){
+          var sint=sint+1;
+        }
+        if(sin6=="S"){
+          var sint=sint+1;
+        }
+        if(sin7=="S"){
+          var sint=sint+1;
+        }
+        if(sin8=="S"){
+          var sint=sint+1;
+        }
+        if(sin9=="S"){
+          var sint=sint+1;
+        }
+        if(sin10=="S"){
+          var sint=sint+1;
+        }
+        if(sin11=="S"){
+          var sint=sint+1;
+        }
+        if(sin12=="S"){
+          var sint=sint+1;
+        }
+        if(sin13=="S"){
+          var sint=sint+1;
+        }
+        if(sin14=="S"){
+          var sint=sint+1;
+        }
+        if(sin15=="S"){
+          var sint=sint+1;
+        }
+        if(sin16=="S"){
+          var sint=sint+1;
+        }
+        if(sin17=="S"){
+          var sint=sint+1;
+        }
+        if(sin18=="S"){
+          var sint=sint+1;
+        }
+        if(sin19=="S"){
+          var sint=sint+1;
+        }
+
+        if(sin19=="S"||sin18=="S"){
+          var sintM2=6;
+        }
+
+
+
+        if(sintM==3){
+          document.write("Usted presenta los síntomas más comunes en pacientes con Covid-19 (Fiebre, tos seca, cansancio)," + "<br>" +"se recomienda acudir a su médico más cercano para un resultado más detallado."+ "<br>" + "<br>" +"Evite automedicarse, se sugiere siga las recomendaciones de la Secretaria de Salud.");
+        }
+
+        else if(sintM2==6){
+            document.write("Usted presenta dificultades para hablar o moverse, " + "<br>" +"se sugiere que de inmediato acuda a su médico más cercano."+ "<br>" + "<br>" +"Evite automedicarse, se sugiere siga las recomendaciones de la Secretaria de Salud.");
+        }
+
+        else if(sint>=5){
+          document.write("Usted presenta "+sint+" sintomas relacionados con Covid-19, " + "<br>" +"se recomienda acudir a su médico más cercano para un resultado más detallado."+ "<br>" + "<br>" +"Evite automedicarse, se sugiere siga las recomendaciones de la Secretaria de Salud.");
+        }
+
+        else if(sint<5 && sint>0 && sintM != 3 || sintM3<3 && sintM3>0){
+          document.write("La posibilidad de contraer Covid-19 es muy baja"+ "<br>"+ "<br>"  +"Evite automedicarse, se sugiere siga las recomendaciones de la Secretaria de Salud.");
+        }
+
+        else{
+          document.write("Usted se encuentra bien de salud"+ "<br>" + "<br>" +"Evite automedicarse, se sugiere siga las recomendaciones de la Secretaria de Salud.");
+        }
+
+        </script>
+
+  </div>
+
+
+          <input id="regresar" type="submit" value="Regresar al formulario Covid-19"
+          onclick="window.location='index.html';" />
+
+
+  </body>
+</html>
